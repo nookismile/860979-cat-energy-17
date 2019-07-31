@@ -1,0 +1,82 @@
+@import "blocks/page-header.less";
+@import "blocks/start-home.less";
+@import "blocks/preview.less";
+@import "blocks/process.less";
+@import "blocks/example.less";
+@import "blocks/contacts.less";
+@import "blocks/page-footer.less";
+@import "blocks/catalog.less";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weght: 400;
+    line-height: 18px;
+    color: #444444;
+    background: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    color: #111111;
+    text-decoration: none;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: auto;
+    max-width: 1170px;
+    padding: 0 20px;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-top: 28px;
+    color: #111111;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background: #68b738;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.btn--light {
+    background: #f2f2f2;
+    color: #444444;
+}

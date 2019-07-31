@@ -1,0 +1,128 @@
+.example {
+    background: #f2f2f2;
+}
+
+.example__results-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+    list-style-type: none;
+}
+
+
+.example__results-item {
+    max-width: 124px;
+    width: 100%;
+    padding: 15px 10px 5px;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+
+.results-item__wrapper {
+    max-width: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    padding: 0 10px 0;
+    background: #f2f2f2;
+}
+
+.example__results-fact {
+    color: #111111;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.example__results-inner {
+    margin: 8px 0 0;
+    font-family: "Arial", "Tahoma", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    color: #111111;
+}
+
+.example__cost {
+    font-family: "Oswald", "Arial", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-top: 0;
+    color: #111111;
+}
+
+.example__picture {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.example__image {
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.example__toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 195px;
+    margin: 0 auto;
+    padding: 30px 0 35px;
+}
+
+.toggle__btn {
+    padding: 0;
+    margin: 0;
+    color: #111111;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.toggle__progress {
+    position: relative;
+    max-width: 84px;
+    width: 100%;
+    height: 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50px;
+    background: #ffffff;
+}
+
+.toggle__progress::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    right: 5px;
+    width: 35px;
+    height: 6px;
+    border-radius: 50px;
+    background: #68b738;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}

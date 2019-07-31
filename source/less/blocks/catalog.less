@@ -1,0 +1,240 @@
+.catalog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.product {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-bottom: 22px;
+
+}
+
+.product__img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: block;
+}
+
+.product__link {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    display: block;
+    max-width: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #111111;
+    max-width: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.product__description {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.product__options {
+    width: 100%;
+    padding: 0;
+    font-family: "Arial", "Tahoma", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    border-collapse: collapse;
+}
+
+.product__options td:last-child {
+    text-align: right;
+}
+
+.more {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+
+.more__inner {
+    position: relative;
+    margin-top: 77px;
+    text-align: center;
+}
+
+.more__inner::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    opacity: 0.2;
+    background: #ffffff url(../img/icon-plus.svg) no-repeat center;
+}
+
+
+.more__title {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #111111;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.more__description {
+    font-size: 12px;
+    margin-bottom: 23px;
+}
+
+.add-products {
+    margin-bottom: 30px;
+}
+
+.add-products__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+.title-line {
+    position: relative;
+    display: inline-block;
+    padding-right: 22px;
+    padding-left: 40px;
+    margin-left: -40px;
+    margin-bottom: 35px;
+    margin-top: 0;
+    color: #111111;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    background: #ffffff;
+
+}
+
+.title-line::after,
+.title-line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    width: 100vw;
+    height: 3px;
+    margin-top: 2px;
+    background: #68b738;
+}
+
+.title-line::before {
+    right: 0;
+}
+
+.title-line::after {
+    left: 20px;
+}
+
+.additionally__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.additionally__info {
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: "Arial", "Tahoma", sans-serif;
+    border-collapse: collapse;
+}
+
+.additionally__info td:last-child {
+    text-align: right;
+}
+
+.additionally__title {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    margin-top: 0;
+    color: #222222;
+}
+
+.additionally {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.additionally__item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.additionally__item:first-child {
+    border-top: 1px solid #d9d9d9;
+}
+
+
+.banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 290px;
+    width: 100%;
+    padding: 50px 10px;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(../img/gift-photo-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #68b738;
+    background-size: cover;
+}
+
+.banner__description {
+    max-width: 150px;
+    margin: 0;
+    font-family: "Arial", "Tahoma", sans-serif;
+    line-height: 20px;
+}
