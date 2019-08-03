@@ -1,0 +1,112 @@
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.title-line {
+  position: relative;
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 40px;
+  margin-left: -40px;
+  margin-bottom: 35px;
+  margin-top: 0;
+  color: #111111;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  background: #ffffff;
+}
+
+.title-line::after,
+.title-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  width: 100vw;
+  height: 3px;
+  margin-top: 2px;
+  background: #68b738;
+}
+
+.title-line::before {
+  right: 0;
+}
+
+.title-line::after {
+  left: 20px;
+}
+
+.additionally__column {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.additionally__info {
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  border-collapse: collapse;
+}
+
+.additionally__info td:last-child {
+  text-align: right;
+}
+
+.additionally__title {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  margin-top: 0;
+  color: #222222;
+}
+
+.additionally {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.additionally__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.additionally__item:first-child {
+  border-top: 1px solid #d9d9d9;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 290px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-rigth: 10px;
+  padding-left: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #68b738;
+  background-size: cover;
+}
+
+.banner__description {
+  max-width: 150px;
+  margin: 0;
+  font-family: "Arial", "Tahoma", sans-serif;
+  line-height: 20px;
+}

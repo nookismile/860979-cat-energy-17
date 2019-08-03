@@ -1,0 +1,30 @@
+.process__list {
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 23px;
+  list-style-type: none;
+}
+
+.process__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-size: 50px;
+  }
+}

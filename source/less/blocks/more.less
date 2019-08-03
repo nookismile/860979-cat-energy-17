@@ -1,0 +1,42 @@
+.more {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.more__inner {
+  position: relative;
+  margin-top: 77px;
+  text-align: center;
+}
+
+.more__inner::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.more__title {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.more__description {
+  font-size: 12px;
+  margin-bottom: 23px;
+}
