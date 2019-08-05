@@ -1,4 +1,5 @@
 .start-home {
+  position: relative;
   padding: 30px;
   color: #ffffff;
   text-align: center;
@@ -25,8 +26,8 @@
 .start-home__slogan {
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 34px;
-  line-height: 39px;
+  font-size: 36px;
+  line-height: 1;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,7 +39,7 @@
 @media (min-width: @desktop-width) {
   .start-home__slogan {
     max-width: 520px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     text-align: left;
     color: #111111;
   }
@@ -60,9 +61,29 @@
   }
 }
 
+.start-home__image {
+  display: block;
+  margin: 0 auto 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .start-home__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: @desktop-width) {
-  .start-home__slogan {
-    margin-bottom: 50px;
+  .start-home__image {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    bottom: inherit;
+    margin: auto;
+    transform: translateX(-34%);
   }
 }
 

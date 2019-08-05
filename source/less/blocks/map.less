@@ -1,6 +1,23 @@
 .map {
-  height: 365px;
-  border: 0;
+  position: relative;
+  background: #ffffff;
+}
+
+.map__iframe {
+    height: 365px;
+    border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .map__iframe {
+    height: 395px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__iframe {
+    height: 400px;
+  }
 }
 
 .map iframe {
