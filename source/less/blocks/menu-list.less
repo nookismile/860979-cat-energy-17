@@ -4,3 +4,67 @@
   padding: 0;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .menu-list {
+    display: flex;
+    margin-right: -20px;
+  }
+}
+
+.menu-list__link {
+  position: relative;
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 25px 0;
+  color: #111111;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Oswald", "Arial", sans-serif;
+  border-top: 1px solid #e6e6e6;
+  text-transform: uppercase;
+
+  &:hover {
+      opacity: 0.6;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .menu-list__link {
+    margin: 0;
+    padding: 10px 19px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+  }
+
+  .menu-link__item--active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    width: calc(100% - 40px);
+    height: 2px;
+    background-color: #68b738;
+  }
+
+  .menu-link__item--active:hover::after {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .menu-list__link {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+  .menu-link__item--active::after {
+    background-color: #ffffff;
+  }
+
+}
+
