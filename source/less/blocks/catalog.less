@@ -56,8 +56,6 @@
   position: relative;
   display: inline-block;
   padding-right: 22px;
-  padding-left: 40px;
-  margin-left: -40px;
   margin-bottom: 35px;
   margin-top: 0;
   color: #111111;
@@ -81,7 +79,14 @@
 }
 
 .title-line::before {
+  display: none;
   right: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .title-line::before {
+    display: none;
+  }
 }
 
 .title-line::after {
@@ -91,35 +96,27 @@
 @media (min-width: @tablet-width) {
   .title-line {
     margin-bottom: 75px;
+    padding-left: 40px;
     padding-right: 40px;
     font-size: 36px;
+    &::before {
+      display: block;
+    }
   }
 }
 
-
-.banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  min-height: 290px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-rigth: 10px;
-  padding-left: 10px;
-  text-align: center;
-  color: #ffffff;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #68b738;
-  background-size: cover;
+@media (max-width: 1299px) and (min-width: @tablet-width) {
+  .title-line--left {
+    margin-left: 0;
+    margin-bottom: 80px;
+  }
 }
 
-.banner__description {
-  max-width: 150px;
-  margin: 0;
-  font-family: "Arial", "Tahoma", sans-serif;
-  line-height: 20px;
+@media (min-width: @desktop-width) {
+  .title-line {
+    padding-left: 0;
+    &::before {
+      display: none;
+    }
+  }
 }
