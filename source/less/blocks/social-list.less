@@ -9,7 +9,20 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+@media (min-width: @tablet-width) {
+  .social-list {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
 .social-list__item {
   margin: 0 16px;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list__item {
+    margin: 0 10px;
+  }
 }

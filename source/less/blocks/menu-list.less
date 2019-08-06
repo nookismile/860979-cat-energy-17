@@ -26,7 +26,7 @@
   text-transform: uppercase;
 
   &:hover {
-      opacity: 0.6;
+    opacity: 0.6;
   }
 }
 
@@ -57,14 +57,15 @@
 }
 
 @media (min-width: @desktop-width) {
-  .menu-list__link {
+  .page-header--start .menu-list__link {
     color: #ffffff;
-    font-size: 20px;
-}
-
-  .menu-link__item--active::after {
-    background-color: #ffffff;
   }
 
-}
+  .menu-list__link {
+    font-size: 20px;
+  }
 
+  .page-header--start .menu-link__item--active::after {
+    background-color: #ffffff;
+  }
+}

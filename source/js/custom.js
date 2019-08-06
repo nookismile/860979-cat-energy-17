@@ -10,15 +10,4 @@ navToggle.addEventListener('click', function() {
   navToggle.classList.toggle('toggle-menu--closed');
   navMenu.classList.toggle('main-nav--opened');
 });
-
-
-
-
-
-
-
-
-
-
-
 });
