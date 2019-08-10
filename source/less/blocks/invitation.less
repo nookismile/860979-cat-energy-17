@@ -79,3 +79,24 @@
     text-align: right;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .invitation__text span {
+    display: block;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invitation__text {
+    padding: 30px 40px;
+    max-width: 50%;
+  }
+}
+
+
+@media (max-width: @desktop-width) and (min-width: @tablet-width) {
+  .invitation__text {
+    text-align: right;
+  }
+}
