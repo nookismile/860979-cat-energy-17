@@ -1,0 +1,86 @@
+.form-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field {
+    margin-bottom: 22px;
+  }
+}
+
+.form-field__text {
+  flex-shrink: 0;
+  margin-right: 15px;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field__text {
+    font-size: 20px;
+  }
+}
+
+.form-field__control {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #e6e6e6;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+  transition: 0.3s;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field__control {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form-field__control:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form-field__control:active,
+.form-field__control:focus {
+  outline: 2px solid #444444;
+}
+
+.form-field__control:active ~ svg,
+.form-field__control:focus ~ svg {
+  fill: #68b738;
+}
+
+.form-field__control::-webkit-input-placeholder {
+  color: #444444;
+}
+
+.form-field__control:-ms-input-placeholder {
+  color: #444444;
+}
+
+.form-field__control::-ms-input-placeholder {
+  color: #444444;
+}
+
+.form-field__control::placeholder {
+  color: #444444;
+}
+
+.form-field__control:focus:invalid {
+  outline: 2px solid #ff8282;
+}
+
+.form-field__control:focus:invalid ~ svg {
+  fill: #ff8282;
+}
