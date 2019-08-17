@@ -45,21 +45,21 @@ img {
   position: relative;
   margin: 0 auto;
   width: auto;
-  max-width: 1170px;
+  max-width: 1300px;
   padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .wrapper {
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 708px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .wrapper {
-    max-width: 100%;
+    max-width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -109,17 +109,18 @@ sup {
 
 .btn {
   display: inline-block;
-  width: 100%;
-  padding: 10px 15px;
-  font-family: "Oswald", "Arial", sans-serif;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-  background-color: #68b738;
-  cursor: pointer;
+    vertical-align: top;
+    width: 100%;
+    padding: 10px 22px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald","Arial",sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #68b738;
+    border: 0;
 
   &:hover {
     background: #5eaa2f;
@@ -133,12 +134,14 @@ sup {
 @media (min-width: @tablet-width) {
   .btn--main {
     width: auto;
+    margin-top: 10px;
     padding: 16px 27px;
     font-size: 20px;
   }
 }
 
 .btn--light {
-  background-color: #f2f2f2;
+  padding: 8px 22px;
   color: #444444;
+  background-color: #f2f2f2;
 }

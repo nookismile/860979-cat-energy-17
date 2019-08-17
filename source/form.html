@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>Подбор программы. HTML Academy: Кэт энерджи</title>
 
   <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -43,28 +44,28 @@
   <main class="page-main">
     <div class="wrapper">
       <section class="form">
-        <h1 class="title">Подбор программы</h1>
-        <p class="title-text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+        <h1 class="title title--form">Подбор программы</h1>
+        <p class="title-text title-text--form">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="question" action="https://echo.htmlacademy.ru" method="post">
-          <div class="question__row">
+          <div class="question__row question__row--private">
             <div class="question__column">
-              <fieldset class="question__field">
-                <label class="form-field">
+              <fieldset class="question__field question__field--private">
+                <label class="form-field form__row">
                   <span class="form-field__text">Имя:*</span>
                   <input class="form-field__control" type="text" placeholder="Барсик" required="">
                 </label>
-                <label class="form-field">
+                <label class="form-field form__row" for="">
                   <span class="form-field__text">Вес (кг):*</span>
                   <input class="form-field__control" type="text" placeholder="7" required="">
                 </label>
-                <label class="form-field">
+                <label class="form-field form__row">
                   <span class="form-field__text">Возраст (лет):</span>
                   <input class="form-field__control" type="text" placeholder="7">
                 </label>
               </fieldset>
             </div>
             <div class="question__column">
-              <fieldset class="question__field question__field--line">
+              <fieldset class="question__field question__field--line question__field--private">
                 <input type="radio" id="radio-1" name="choice" checked="">
                 <label class="form-type form-type--radio" for="radio-1" tabindex="0">Похудение</label>
                 <input type="radio" id="radio-2" name="choice">
@@ -75,22 +76,22 @@
             </div>
           </div>
           <fieldset class="question__field">
-            <h2 class="title-line title-line--left">Контактные данные (владельца кота)</h2>
+            <h2 class="title-line title-line--left">Контактные данные <span class="title-line--comment">(владельца&nbsp;кота)</span></h2>
             <div class="question__row">
               <div class="question__column">
                 <label class="form-field form-field--ident">
-                  <span class="form-field__text">E-mail:*</span>
+                  <span class="form-field__text form-field__text--contacts">E-mail:*</span>
                   <input class="form-field__control form-field__control--icon" type="email" placeholder="kuklachev@gmail.com" required="">
-                  <svg class="form-field__icon" width="18" height="20">
+                  <svg class="form-field__icon form-field__icon--email" width="18" height="20">
                     <use xlink:href="img/sprite.svg#icon-mail"></use>
                   </svg>
                 </label>
               </div>
               <div class="question__column">
                 <label class="form-field">
-                  <span class="form-field__text">Телефон:*</span>
+                  <span class="form-field__text form-field__text--contacts">Телефон:*</span>
                   <input class="form-field__control form-field__control--icon" type="tel" placeholder="8 (960) 900-60-90" required="">
-                  <svg class="form-field__icon" width="20" height="20">
+                  <svg class="form-field__icon form-field__icon--phone" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
                 </label>
@@ -98,7 +99,7 @@
             </div>
           </fieldset>
           <div class="question__field question__field--ident">
-            <label class="title-line" for="for-textarea">Комментарий</label>
+            <label class="title-line title-line--comments" for="for-textarea">Комментарий</label>
             <textarea class="question__textarea" rows="8" id="for-textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <fieldset class="question__field question__field--ident-small">
@@ -122,12 +123,14 @@
               </div>
             </div>
           </fieldset>
-          <div class="question__row">
-            <div class="question__column question__column--xl-2">
-              <button class="btn question__btn">Отправить заявку</button>
+          <div class="form__submit">
+            <div class="form__submit-block">
+            <button class="btn question__btn" type="submit">
+              Отправить заявку
+              </button>
             </div>
-            <div class="question__column question__column--xl-2">
-              <p class="question__text"><sup>*</sup>— Обязательные поля</p>
+            <div class="form__submit-block">
+              <small class="form__submit-note">* — Обязательные поля</small>
             </div>
           </div>
         </form>
@@ -152,7 +155,7 @@
     <div class="wrapper">
       <div class="footer-info">
         <div class="footer-info__item">
-          <a href="#" class="footer-logo">
+          <a href="index.html" class="footer-logo">
             <img src="img/logo-footer.svg" width="135" height="24" alt="Лого футер">
           </a>
         </div>
@@ -160,14 +163,23 @@
           <ul class="social-list">
             <li class="social-list__item">
               <a class="social-list__item-link" href="#">
+                <svg class="social-icon social-icon--vk" width="22" height="12">
+                    <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+                  </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__item-link" href="#">
+                <svg class="social-icon social-icon--insta" width="22" height="16">
+                    <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
+                  </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__item-link" href="#">
+                 <svg class="social-icon social-icon--fb" width="10" height="19">
+                    <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
+                  </svg>
               </a>
             </li>
           </ul>
@@ -175,7 +187,9 @@
         <div class="footer-info__item">
           <a href="#" class="copyright">
             <p class="copyright__text">HTMLAcademy</p>
-            <img class="copyright__image" src="http://placehold.it/150x100" width="26" height="30" alt="Копирайт">
+            <svg class="copyright__image" width="40" height="40">
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              </svg>
           </a>
         </div>
       </div>
