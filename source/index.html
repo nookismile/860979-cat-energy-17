@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
-  <title>HTML Academy: Кэт энерджи</title>
-
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="css/normalize.css" rel="stylesheet" type="text/css" />
-
-</head>
-<body class="page">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page">
     <header class="page-header page-header--index">
       <div class="page-header__layout">
         <div class="page-header__logo-block">
           <a class="page-header__logo-link">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo" src="img/icon-logo-mobile.svg" alt="Логотип Cat Energy">
-            </picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-sign" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
+          </picture>
           </a>
+<!--
           <a class="page-header__logo-sign-link">
             <img class="page-header__logo-sign" src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
           </a>
+-->
         </div>
         <nav class="main-nav main-nav--index">
-          <button class="main-nav__toggle main-nav__toggle--hidden" type="button"><span class="main-nav__toggle-bar">Меню</span></button>
+          <button class="main-nav__toggle" type="button"><span class="main-nav__toggle-bar">Меню</span></button>
           <ul class="main-nav__items">
             <li class="main-nav__item">
               <a class="main-nav__item-link main-nav__item-link--active">Главная</a>
@@ -148,20 +147,24 @@
               <div class="toggle__items">
                 <div class="toggle__item toggle__item--before">
                   <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before@1x.webp, img/before@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 768px)" srcset="img/before@1x.png, img/before@2x.png 2x">
-                    <img class="toggle__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="До">
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                    <img class="toggle__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Большой кот">
                   </picture>
                 </div>
                 <div class="toggle__item toggle__item--after">
                   <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after@1x.webp, img/after@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 768px)" srcset="img/after@1x.png, img/after@2x.png 2x">
-                    <img class="toggle__img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="После">
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                    <img class="toggle__img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
                   </picture>
                 </div>
               </div>
@@ -193,7 +196,8 @@
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
             <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
-          <div class="contacts__map" id="map" aria-label="map"></div>
+          <div class="contacts__map" id="map" aria-label="map">
+               </div>
           <div class="contacts__info">
             <div class="contacts__container container">
               <div class="contacts__layout">
@@ -249,8 +253,8 @@
               <a class="page-footer__copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
                 <span class="page-footer__copy-sign">HTML Academy</span>
                 <svg class="page-footer__copy-logo" width="27" height="34">
-                  <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
-                </svg>
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              </svg>
               </a>
             </div>
           </div>
@@ -259,6 +263,10 @@
 
     </footer>
 
-<script src="js/custom.js"></script>
-</body>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
