@@ -12,13 +12,13 @@
 
 <body class="page">
   <header class="page-header">
-    <div class="page-header__layout">
+    <div class="page-header__wrapper">
       <div class="page-header__logo-block">
-        <a class="page-header__logo-link">
+        <a class="page-header__logo-link" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-sign" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="192" height="38">
+            <img class="page-header__logo-sign" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
       </div>
@@ -26,13 +26,13 @@
         <button class="main-nav__toggle" type="button"><span class="main-nav__toggle-bar">Меню</span></button>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="index.html">Главная</a>
+            <a class="main-nav__item-link">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active">Подбор программы</a>
+            <a class="main-nav__item-link main-nav__item-link--active" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -45,7 +45,7 @@
       </div>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__text-block">
-          <p class="form__lead lead">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
+          <p class="form__tagline tagline">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
         </div>
 
         <div class="form__block form__block--cat">
@@ -149,7 +149,7 @@
     </div>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__contacts contacts">
+    <section class="page-footer__contacts contacts contacts--start">
       <div class="contacts__map-wrapper">
         <picture>
           <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
@@ -160,12 +160,13 @@
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
-        <div class="contacts__map" id="map" aria-label="map"></div>
+        <div class="contacts__map" id="map" aria-label="map">
+        </div>
         <div class="contacts__info">
           <div class="contacts__container container">
-            <div class="contacts__layout">
+            <div class="contacts__wrapper">
               <div class="contacts__title-block">
-                <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+                <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
               </div>
               <div class="contacts__info-block">
                 <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
@@ -177,9 +178,9 @@
     </section>
     <div class="page-footer__info">
       <div class="page-footer__container container">
-        <div class="page-footer__layout">
+        <div class="page-footer__wrapper">
           <div class="page-footer__logo-block">
-            <a class="page-footer__logo-link" href="index.html">
+            <a class="page-footer__logo-link">
               <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="23" alt="Cat Energy">
             </a>
           </div>
@@ -215,7 +216,7 @@
             <a class="page-footer__copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <span class="page-footer__copy-sign">HTML Academy</span>
               <svg class="page-footer__copy-logo" width="27" height="34">
-                <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
           </div>
