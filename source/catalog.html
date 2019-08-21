@@ -12,13 +12,13 @@
 
 <body class="page">
   <header class="page-header">
-    <div class="page-header__layout">
+    <div class="page-header__wrapper">
       <div class="page-header__logo-block">
-        <a class="page-header__logo-link">
+        <a class="page-header__logo-link" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-sign" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="192" height="38">
+            <img class="page-header__logo-sign" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
       </div>
@@ -26,10 +26,10 @@
         <button class="main-nav__toggle" type="button"><span class="main-nav__toggle-bar">Меню</span></button>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="index.html">Главная</a>
+            <a class="main-nav__item-link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active">Каталог продукции</a>
+            <a class="main-nav__item-link main-nav__item-link--active" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="form.html">Подбор программы</a>
@@ -48,7 +48,7 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <div class="product">
-              <div class="product__layout">
+              <div class="product__wrapper">
                 <div class="product__img-block">
                   <a class="product__img-link" href="product.html">
                     <picture>
@@ -83,13 +83,13 @@
                 </div>
               </div>
               <div class="product__link-block">
-                <a class="product__link button order-link-js" href="order.html">Заказать</a>
+                <a class="product__link button" href="order.html">Заказать</a>
               </div>
             </div>
           </li>
           <li class="catalog__item">
             <div class="product">
-              <div class="product__layout">
+              <div class="product__wrapper">
                 <div class="product__img-block">
                   <a class="product__img-link" href="product.html">
                     <picture>
@@ -124,13 +124,13 @@
                 </div>
               </div>
               <div class="product__link-block">
-                <a class="product__link button order-link-js" href="order.html">Заказать</a>
+                <a class="product__link button" href="order.html">Заказать</a>
               </div>
             </div>
           </li>
           <li class="catalog__item">
             <div class="product">
-              <div class="product__layout">
+              <div class="product__wrapper">
                 <div class="product__img-block">
                   <a class="product__img-link" href="product.html">
                     <picture>
@@ -165,13 +165,13 @@
                 </div>
               </div>
               <div class="product__link-block">
-                <a class="product__link button order-link-js" href="order.html">Заказать</a>
+                <a class="product__link button" href="order.html">Заказать</a>
               </div>
             </div>
           </li>
           <li class="catalog__item">
             <div class="product">
-              <div class="product__layout">
+              <div class="product__wrapper">
                 <div class="product__img-block">
                   <a class="product__img-link" href="product.html">
                     <picture>
@@ -206,13 +206,13 @@
                 </div>
               </div>
               <div class="product__link-block">
-                <a class="product__link button order-link-js" href="order.html">Заказать</a>
+                <a class="product__link button" href="order.html">Заказать</a>
               </div>
             </div>
           </li>
           <li class="catalog__item">
             <div class="product">
-              <div class="product__layout">
+              <div class="product__wrapper">
                 <div class="product__img-block">
                   <a class="product__img-link" href="product.html">
                     <picture>
@@ -247,13 +247,13 @@
                 </div>
               </div>
               <div class="product__link-block">
-                <a class="product__link button order-link-js" href="order.html">Заказать</a>
+                <a class="product__link button" href="order.html">Заказать</a>
               </div>
             </div>
           </li>
           <li class="catalog__item">
             <div class="product">
-              <div class="product__layout">
+              <div class="product__wrapper">
                 <div class="product__img-block">
                   <a class="product__img-link" href="product.html">
                     <picture>
@@ -287,13 +287,13 @@
                 </div>
               </div>
               <div class="product__link-block">
-                <a class="product__link button order-link-js" href="order.html">Заказать</a>
+                <a class="product__link button" href="order.html">Заказать</a>
               </div>
             </div>
           </li>
           <li class="catalog__item">
             <div class="product">
-              <div class="product__layout">
+              <div class="product__wrapper">
                 <div class="product__img-block">
                   <a class="product__img-link" href="product.html">
                     <picture>
@@ -328,7 +328,7 @@
                 </div>
               </div>
               <div class="product__link-block">
-                <a class="product__link button order-link-js" href="order.html">Заказать</a>
+                <a class="product__link button" href="order.html">Заказать</a>
               </div>
             </div>
           </li>
@@ -343,57 +343,54 @@
           </li>
         </ul>
       </section>
-
-      <section class="page-main__extra-products extra-products">
-        <h2 class="extra-products__subtitle subtitle">Дополнительные товары</h2>
-
-        <div class="extra-products__layout">
-          <div class="extra-products__list-block">
-            <ul class="extra-products__list">
-              <li class="extra-products__item">
-                <div class="extra-product">
-                  <h3 class="extra-product__title">
-                    <a class="extra-product__title-link" href="product.html">Сахарозаменитель</a>
+      <section class="page-main__add-products add-products">
+        <h2 class="add-products__subtitle subtitle">Дополнительные товары</h2>
+        <div class="add-products__wrapper">
+          <div class="add-products__list-block">
+            <ul class="add-products__list">
+              <li class="add-products__item">
+                <div class="add-product">
+                  <h3 class="add-product__title">
+                    <a class="add-product__title-link" href="product.html">Сахарозаменитель</a>
                   </h3>
-                  <div class="extra-product__amount">1 Упаковка</div>
-                  <div class="extra-product__price">100&nbsp;p.</div>
-                  <a class="extra-product__link button order-link-js" href="order.html">Заказать</a>
+                  <div class="add-product__amount">1 Упаковка</div>
+                  <div class="add-product__price">100&nbsp;p.</div>
+                  <a class="add-product__link button" href="order.html">Заказать</a>
                 </div>
               </li>
-              <li class="extra-products__item">
-                <div class="extra-product">
-                  <h3 class="extra-product__title">
-                    <a class="extra-product__title-link" href="product.html">Питьевая вода</a>
+              <li class="add-products__item">
+                <div class="add-product">
+                  <h3 class="add-product__title">
+                    <a class="add-product__title-link" href="product.html">Питьевая вода</a>
                   </h3>
-                  <div class="extra-product__amount">5 литров</div>
-                  <div class="extra-product__price">50&nbsp;p.</div>
-                  <a class="extra-product__link button order-link-js" href="order.html">Заказать</a>
+                  <div class="add-product__amount">5 литров</div>
+                  <div class="add-product__price">50&nbsp;p.</div>
+                  <a class="add-product__link button" href="order.html">Заказать</a>
                 </div>
               </li>
-              <li class="extra-products__item">
-                <div class="extra-product">
-                  <h3 class="extra-product__title">
-                    <a class="extra-product__title-link" href="product.html">Молоко</a>
+              <li class="add-products__item">
+                <div class="add-product">
+                  <h3 class="add-product__title">
+                    <a class="add-product__title-link" href="product.html">Молоко</a>
                   </h3>
-                  <div class="extra-product__amount">1 литр</div>
-                  <div class="extra-product__price">100&nbsp;p.</div>
-                  <a class="extra-product__link button order-link-js" href="order.html">Заказать</a>
+                  <div class="add-product__amount">1 литр</div>
+                  <div class="add-product__price">100&nbsp;p.</div>
+                  <a class="add-product__link button" href="order.html">Заказать</a>
                 </div>
               </li>
-              <li class="extra-products__item">
-                <div class="extra-product">
-                  <h3 class="extra-product__title">
-                    <a class="extra-product__title-link" href="product.html">Витамины</a>
+              <li class="add-products__item">
+                <div class="add-product">
+                  <h3 class="add-product__title">
+                    <a class="add-product__title-link" href="product.html">Витамины</a>
                   </h3>
-                  <div class="extra-product__amount">1 упаковка (30 г)</div>
-                  <div class="extra-product__price">300&nbsp;p.</div>
-                  <a class="extra-product__link button order-link-js" href="order.html">Заказать</a>
+                  <div class="add-product__amount">1 упаковка (30 г)</div>
+                  <div class="add-product__price">300&nbsp;p.</div>
+                  <a class="add-product__link button" href="order.html">Заказать</a>
                 </div>
               </li>
             </ul>
           </div>
-
-          <div class="extra-products__promo-block">
+          <div class="add-products__promo-block">
             <a class="promo" href="#">
               <h3 class="promo__title">Закажите все и&nbsp;получите чехол для кота в подарок!</h3>
             </a>
@@ -403,7 +400,7 @@
     </div>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__contacts contacts">
+    <section class="page-footer__contacts contacts contacts--start">
       <div class="contacts__map-wrapper">
         <picture>
           <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
@@ -414,12 +411,13 @@
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Схема проезда ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
-        <div class="contacts__map" id="map" aria-label="map"></div>
+        <div class="contacts__map" id="map" aria-label="map">
+        </div>
         <div class="contacts__info">
           <div class="contacts__container container">
-            <div class="contacts__layout">
+            <div class="contacts__wrapper">
               <div class="contacts__title-block">
-                <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+                <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
               </div>
               <div class="contacts__info-block">
                 <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
@@ -431,9 +429,9 @@
     </section>
     <div class="page-footer__info">
       <div class="page-footer__container container">
-        <div class="page-footer__layout">
+        <div class="page-footer__wrapper">
           <div class="page-footer__logo-block">
-            <a class="page-footer__logo-link" href="index.html">
+            <a class="page-footer__logo-link">
               <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="23" alt="Cat Energy">
             </a>
           </div>
@@ -469,7 +467,7 @@
             <a class="page-footer__copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <span class="page-footer__copy-sign">HTML Academy</span>
               <svg class="page-footer__copy-logo" width="27" height="34">
-                <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
           </div>
