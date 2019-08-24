@@ -1,4 +1,4 @@
-(function() {
+(function () {
   var TABLET_WIDTH = 768; //px
   var DESKTOP_WIDTH = 1300; //px
 
