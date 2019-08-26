@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page">
@@ -23,10 +23,10 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="main-nav__toggle-bar">Меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--hidden" type="button"><span class="main-nav__toggle-bar">Меню</span></button>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__item-link">Главная</a>
+            <a class="main-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
@@ -56,7 +56,7 @@
               <input class="field-text__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
             </div>
             <div class="form__row field-text">
-              <label class="field-text__label" for="cat-weight">Вес (кг):*</label>
+              <label class="field-text__label field-text__label--weight" for="cat-weight">Вес (кг):*</label>
               <input class="field-text__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
             </div>
             <div class="form__row field-text">
@@ -166,7 +166,7 @@
           <div class="contacts__container container">
             <div class="contacts__wrapper">
               <div class="contacts__title-block">
-                <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+                <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
               </div>
               <div class="contacts__info-block">
                 <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
@@ -188,7 +188,7 @@
             <ul class="page-footer__social social">
               <li class="social__item">
                 <a class="social__item-link" href="https://vk.com/htmlacademy" target="_blank">
-                  <span class="visually-hidden">vKontakte</span>
+                  <span class="visually-hidden">Вконтакте</span>
                   <svg class="social__item-icon social__item-icon--vk" width="22" height="12">
                     <use xlink:href="img/sprite.svg#icon-vk"></use>
                   </svg>
@@ -215,7 +215,7 @@
           <div class="page-footer__copy-block">
             <a class="page-footer__copy-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
               <span class="page-footer__copy-sign">HTML Academy</span>
-              <svg class="page-footer__copy-logo" width="27" height="34">
+              <svg class="page-footer__copy-logo" width="40" height="40">
                 <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>
