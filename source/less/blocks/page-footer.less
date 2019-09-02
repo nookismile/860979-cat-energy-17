@@ -57,7 +57,7 @@
 }
 
 .page-footer__social-block {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   border: 1px solid rgba(#000000, 0.1);
   border-width: 1px 0;
 
@@ -95,6 +95,11 @@
     margin-left: auto;
   }
 
+  @media (min-width: @desktop-width) {
+    width: 161px;
+    margin-top: -3px;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -103,7 +108,13 @@
 .page-footer__copy-logo {
   flex-shrink: 0;
   fill: #666666;
-  margin-right: -7px;
+  margin-right: -13px;
+  margin-top: 2px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 6px;
+    margin-right: -15px;
+  }
 }
 
 .page-footer__copy-link:hover .page-footer__copy-logo,
